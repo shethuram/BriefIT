@@ -1,0 +1,21 @@
+<div class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <h2>Login</h2>
+
+    <div>
+      <label>Email:</label>
+      <input type="email" formControlName="email" required>
+    </div>
+    <br />
+    <div>
+      <label>Password:</label>
+      <input type="password" formControlName="password" required>
+    </div>
+    <br />
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+
+    <div *ngIf="error" style="color: red;">
+      {{ error }}
+    </div>
+  </form>
+</div>

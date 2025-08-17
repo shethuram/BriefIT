@@ -1,0 +1,16 @@
+form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  margin: 6px 0;
+  padding: 6px;
+}
+
+div {
+  color: red;
+  font-size: 12px;
+}

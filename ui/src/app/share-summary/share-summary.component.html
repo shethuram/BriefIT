@@ -1,0 +1,14 @@
+<div class="share-summary">
+  <h2>Share Summary</h2>
+
+  <label for="emails">Recipient Email(s):</label>
+  <input id="emails" type="text" [(ngModel)]="emails" placeholder="Enter comma-separated emails" />
+  <br /><br />
+
+  <label for="message">Message (optional):</label>
+  <textarea id="message" rows="4" [(ngModel)]="message"></textarea>
+  <br /><br />
+
+  <button (click)="sendSummary()">Send</button>
+  <button (click)="logout()" style="margin-left:10px;">Logout</button>
+</div>
